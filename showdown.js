@@ -874,7 +874,7 @@ var _DoCodeBlocks = function(text) {
 			codeblock = codeblock.replace(/^\n+/g,""); // trim leading newlines
 			codeblock = codeblock.replace(/\n+$/g,""); // trim trailing whitespace
 
-			codeblock = "<pre><code>" + codeblock + "\n</code></pre>";
+			codeblock = "<pre class='prettyprint'>" + codeblock + "\n</pre>";
 
 			return hashBlock(codeblock) + nextChar;
 		}
