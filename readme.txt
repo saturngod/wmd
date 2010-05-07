@@ -95,3 +95,9 @@ Support
 
 If you're having trouble getting WMD up and running, feel free to 
 message me on github: http://github.com/derobins
+
+Server Post to Markdown
+-----------------------
+change wmd.js , line 2341 to
+
+  Attacklab.wmd_defaults = {version:1, output:"markdown", lineLength:40, delayLoad:false};

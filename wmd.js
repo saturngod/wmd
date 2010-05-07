@@ -2339,6 +2339,8 @@ Attacklab.wmdBase = function(){
 Attacklab.wmd_env = {};
 Attacklab.account_options = {};
 Attacklab.wmd_defaults = {version:1, output:"HTML", lineLength:40, delayLoad:false};
+/* If you want to use markdown to server post , use following */
+//Attacklab.wmd_defaults = {version:1, output:"markdown", lineLength:40, delayLoad:false};
 
 if(!Attacklab.wmd)
 {
