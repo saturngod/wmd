@@ -356,6 +356,7 @@ var _RunBlockGamut = function(text) {
 
 	text = _DoLists(text);
 	text = _DoCodeBlocks(text);
+	prettyPrint();
 	text = _DoBlockQuotes(text);
 
 	// We already ran _HashHTMLBlocks() before, in Markdown(), but that
@@ -875,7 +876,7 @@ var _DoCodeBlocks = function(text) {
 			codeblock = codeblock.replace(/\n+$/g,""); // trim trailing whitespace
 
 			codeblock = "<pre class='prettyprint'>" + codeblock + "\n</pre>";
-
+			
 			return hashBlock(codeblock) + nextChar;
 		}
 	);

@@ -1944,6 +1944,7 @@ Attacklab.wmdBase = function(){
 			
 			if (wmd.panels.preview) {
 				wmd.panels.preview.innerHTML = text;
+				prettyPrint();
 			}
 			
 			setPanelScrollTops();
